@@ -3,12 +3,14 @@
 
 // Solution:
 // As the question already gives the multiples of 3 or 5 less than 10, I will start the vector with the multiples and iterate from 10
-let multiples = [3, 5, 6, 9];
+function getMultiplesOfThreeOrFive() {
+  let multiples = [3, 5, 6, 9];
 
-for (let i = 10; i < 1000; i++) {
-  if (i % 3 === 0 || i % 5 === 0) {
-    multiples.push(i);
+  for (let i = 10; i < 1000; i++) {
+    if (i % 3 === 0 || i % 5 === 0) {
+      multiples.push(i);
+    }
   }
-}
 
-multiples.reduce((prev, cur) => prev + cur, 0);
+  return multiples.reduce((prev, cur) => prev + cur, 0);
+}
