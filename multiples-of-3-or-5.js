@@ -17,3 +17,6 @@ function getMultiplesOfThreeOrFive() {
 
   return multiples.reduce((prev, cur) => prev + cur, 0);
 }
+
+getMultiplesOfThreeOrFive();
+// expect: 233168

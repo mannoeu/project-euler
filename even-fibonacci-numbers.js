@@ -24,3 +24,6 @@ function getSumOfEvenFibonacciNumbers() {
 
   return even_fib_numbers.reduce((prev, cur) => prev + cur, 0);
 }
+
+getSumOfEvenFibonacciNumbers();
+// expect: 4613732
